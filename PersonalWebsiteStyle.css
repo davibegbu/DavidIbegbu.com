@@ -106,11 +106,13 @@ p {
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #333;
     color: #d4d4d4;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     border-top: 2px solid #555;
 }
 
@@ -147,7 +149,8 @@ p {
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 768px) {
     body {
-        background-size: contain;
+        background-image: none; /* Removes the background image on mobile */
+        background-color: black; /* Sets the background to black */
     }
     .header-container {
         text-align: center;
@@ -179,5 +182,10 @@ p {
     }
     .contact-logo {
         width: 20px;
+    }
+    .company-logo {
+        width: 35px; /* Scaled-down company logos */
+        top: 10px;
+        right: 10px;
     }
 }
