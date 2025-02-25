@@ -146,6 +146,21 @@ p {
     right: 0;
 }
 
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+.tech-icons img {
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+.tech-icons img:hover {
+    transform: scale(1.1);
+}
+
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 768px) {
     body {
@@ -187,5 +202,9 @@ p {
         width: 35px; /* Scaled-down company logos */
         top: 10px;
         right: 10px;
+    }
+
+    .tech-icons img {
+        height: 30px;
     }
 }
